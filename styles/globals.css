@@ -1,0 +1,409 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .translate-z-0 {
+    transform: translateZ(0px);
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0a0d1a; /* Very dark blue, slightly lighter than the background */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #252832; /* Medium dark blue, visible but not contrasting too much */
+    border-radius: 4px;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8.5px 30px;
+    background: #cfb360;
+    border-radius: 11px;
+  }
+  .gold-button {
+    background: linear-gradient(
+      135deg,
+      hsla(45, 31%, 27%, 1) 0%,
+      hsla(45, 54%, 59%, 1) 40%,
+      hsla(45, 54%, 59%, 1) 60%,
+      hsla(45, 31%, 27%, 1) 100%
+    );
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8.5px 30px;
+    border-radius: 11px;
+  }
+  .title {
+    background: linear-gradient(90.73deg, #eeeeee 37.2%, #a5a5a5 91.07%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .dropdowns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .dropdown {
+    position: relative;
+    height: 50px;
+  }
+  .dropdown .customInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    cursor: pointer;
+    background: #fff;
+    display: flex;
+    align-items: center;
+  }
+  .dropdown .customInput .option-img {
+    display: flex;
+  }
+  .dropdown .customInput .option-img img {
+    width: 30px;
+    height: 20px;
+    border-radius: 4px;
+    align-self: center;
+    margin-inline-end: 50px;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .dropdown .option {
+    position: absolute;
+    top: 70px;
+    min-width: 235px;
+    color: #fff;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    background-color: #18191c;
+    padding: 5px;
+    border: 2px solid #2f3237;
+    border-radius: 5px;
+  }
+  .dropdown.active .option {
+    display: block;
+  }
+  .dropdown .option div {
+    padding: 12px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .dropdown .option div:hover {
+    background: #121212;
+    border-radius: 5px;
+    color: #fff;
+  }
+  .dropdown .option div img {
+    width: 30px;
+    height: 20px;
+    border-radius: 4px;
+    align-self: center;
+    -webkit-margin-end: 10px;
+    margin-inline-end: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  .dir {
+    direction: ltr;
+  }
+  .no-visible-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .no-visible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .textgradient {
+    background: linear-gradient(90deg, rgba(210, 197, 158, 1) 0%, rgba(221, 184, 79, 1) 100%);
+  }
+  .footer-bg {
+    background-image: radial-gradient(farthest-side at bottom left, #3b3b1d, transparent 900px),
+      radial-gradient(farthest-corner at bottom right, #3b3b1d, transparent 1000px);
+  }
+
+  .custom-grid {
+    background-size: 60px 60px;
+    background-image: linear-gradient(to right, #ffffff10 1px, transparent 1px), linear-gradient(to bottom, #ffffff10 1px, transparent 1px);
+  }
+
+  .fade-color {
+    background-image: linear-gradient(180deg, rgb(3 7 20), rgb(4 7 21 / 29%) 100%);
+    padding-top: 150px;
+    padding-bottom: 75px;
+  }
+}
+
+@layer base {
+  html {
+    @apply bg-[#020614] overflow-x-hidden;
+  }
+  body {
+    @apply leading-relaxed overflow-x-hidden;
+  }
+  .page {
+    @apply w-full;
+  }
+  .h1 {
+    @apply text-[35px] leading-tight md:text-[60px] md:leading-[1.3] mb-8 font-semibold;
+  }
+  .h2 {
+    @apply text-[35px] leading-tight md:text-[54px] md:leading-[1.3] mb-4 font-semibold;
+  }
+  p {
+    @apply leading-[1.8] text-white/60 font-light;
+  }
+  .btn,
+  .input {
+    @apply h-[52px];
+  }
+  .input {
+    @apply w-full h-[52px] rounded-lg pl-6 capitalize;
+  }
+  .input,
+  .textarea {
+    @apply bg-transparent outline-none focus:ring-1 border border-white/20 placeholder:text-white/30 placeholder:font-light;
+  }
+  .textarea {
+    @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
+  }
+}
+
+/* -- container -- */
+.rodal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateZ(0);
+  z-index: 99999999999999999;
+}
+
+/* -- mask -- */
+.rodal-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(0px);
+}
+
+/* -- dialog -- */
+.rodal-dialog {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  z-index: 1001;
+  height: unset;
+}
+
+.rodal-dialog {
+  outline: none;
+}
+
+/* -- fade -- */
+@-webkit-keyframes rodal-fade-leave {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes rodal-fade-leave {
+  to {
+    opacity: 0;
+  }
+}
+
+.rodal-fade-leave {
+  -webkit-animation: rodal-fade-leave both ease-out;
+  animation: rodal-fade-leave both ease-out;
+}
+
+/* -- zoom -- */
+@-webkit-keyframes rodal-zoom-enter {
+  from {
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+
+@keyframes rodal-zoom-enter {
+  from {
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}
+
+.rodal-zoom-enter {
+  -webkit-animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+  animation: rodal-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+/* Stars */
+
+/* Small stars */
+.stars-small,
+.stars-small:after {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  /* Box-shadow to create multiple small stars in the background */
+  box-shadow: 230px 363px #fff, 874px 640px #fff, 1055px 1915px #fff, 437px 2225px #fff, 236px 74px #fff, 281px 827px #fff,
+    1431px 1869px #fff, 2170px 858px #fff, 2339px 1050px #fff, 1345px 1800px #fff, 2232px 4px #fff, 680px 1957px #fff, 588px 821px #fff,
+    1934px 294px #fff, 1309px 677px #fff, 499px 450px #fff, 148px 1803px #fff, 950px 2048px #fff, 1809px 1952px #fff, 924px 1709px #fff,
+    2309px 1656px #fff, 208px 2052px #fff, 584px 1179px #fff, 281px 662px #fff, 2153px 369px #fff, 968px 715px #fff, 1173px 872px #fff,
+    2314px 1727px #fff, 1986px 1494px #fff, 816px 1811px #fff, 985px 1776px #fff, 202px 1124px #fff, 124px 1446px #fff, 585px 264px #fff,
+    912px 359px #fff, 1753px 2143px #fff, 67px 2020px #fff, 925px 2239px #fff, 1691px 1014px #fff, 38px 1109px #fff, 560px 1846px #fff,
+    1969px 17px #fff, 1714px 2029px #fff, 1642px 1203px #fff, 1431px 1544px #fff, 462px 290px #fff, 135px 1405px #fff, 465px 723px #fff,
+    2093px 642px #fff, 2025px 2029px #fff, 483px 1502px #fff, 1847px 1832px #fff, 1585px 384px #fff, 1775px 1260px #fff, 1112px 423px #fff,
+    622px 1960px #fff, 770px 933px #fff, 1051px 917px #fff, 662px 1654px #fff, 575px 1193px #fff, 380px 453px #fff, 1112px 420px #fff,
+    354px 280px #fff, 704px 1433px #fff, 202px 543px #fff, 237px 1127px #fff, 1989px 2144px #fff, 749px 1006px #fff, 321px 2134px #fff,
+    105px 2128px #fff, 800px 2262px #fff, 2195px 277px #fff, 683px 2383px #fff, 1262px 2097px #fff, 746px 1519px #fff, 904px 1419px #fff,
+    1035px 1806px #fff, 88px 1393px #fff, 2250px 971px #fff, 390px 1953px #fff, 843px 1929px #fff, 1344px 639px #fff, 1045px 819px #fff,
+    1311px 2044px #fff, 1260px 1823px #fff, 95px 1191px #fff, 1086px 481px #fff, 2121px 1236px #fff, 1550px 477px #fff, 532px 133px #fff,
+    1855px 518px #fff, 1179px 1027px #fff, 1204px 1642px #fff, 704px 1715px #fff, 2354px 758px #fff, 1508px 1427px #fff, 1297px 2307px #fff,
+    669px 1418px #fff, 494px 2204px #fff, 1631px 2358px #fff, 2129px 1432px #fff, 306px 1270px #fff, 1756px 601px #fff, 988px 1798px #fff,
+    2117px 789px #fff, 733px 1958px #fff, 580px 410px #fff, 788px 620px #fff, 262px 760px #fff, 1975px 2284px #fff, 2137px 1px #fff,
+    1486px 1650px #fff, 1414px 2156px #fff, 2286px 1830px #fff, 463px 865px #fff, 921px 960px #fff, 1827px 1117px #fff, 45px 814px #fff,
+    495px 2103px #fff, 1938px 910px #fff, 1096px 791px #fff, 2398px 1093px #fff, 805px 419px #fff, 1046px 2388px #fff, 2182px 1988px #fff,
+    1979px 266px #fff, 1734px 755px #fff, 2311px 456px #fff, 99px 646px #fff, 774px 1058px #fff, 2374px 474px #fff, 1907px 521px #fff,
+    1228px 948px #fff, 159px 732px #fff, 311px 2369px #fff, 65px 1936px #fff, 2321px 2038px #fff, 1457px 761px #fff, 813px 1565px #fff,
+    160px 1062px #fff, 1902px 1925px #fff, 1414px 1335px #fff, 878px 473px #fff, 625px 109px #fff, 1674px 1455px #fff, 1686px 1009px #fff,
+    1840px 640px #fff, 107px 1075px #fff, 1964px 1059px #fff, 1399px 2077px #fff, 1866px 960px #fff, 1530px 1525px #fff, 172px 967px #fff,
+    1611px 290px #fff, 801px 1824px #fff, 827px 660px #fff, 1165px 595px #fff, 2181px 599px #fff, 2153px 1712px #fff, 1796px 2157px #fff,
+    1836px 2392px #fff, 735px 70px #fff, 1676px 149px #fff, 966px 2272px #fff, 1636px 2179px #fff, 1857px 1868px #fff, 199px 745px #fff,
+    1463px 1095px #fff, 2161px 2347px #fff, 1638px 1207px #fff, 1756px 54px #fff, 142px 1307px #fff, 947px 2031px #fff, 2388px 2087px #fff,
+    682px 1181px #fff, 979px 2244px #fff, 514px 1962px #fff, 1672px 2374px #fff, 591px 1929px #fff, 1567px 868px #fff, 1867px 498px #fff,
+    48px 626px #fff, 1915px 1733px #fff, 1397px 1820px #fff, 1815px 599px #fff, 792px 322px #fff, 1959px 1190px #fff, 2306px 2307px #fff,
+    192px 592px #fff, 777px 2181px #fff, 339px 844px #fff, 1941px 1971px #fff, 3px 2387px #fff, 2183px 1622px #fff, 1642px 2153px #fff,
+    1026px 91px #fff, 1889px 2122px #fff, 575px 1191px #fff, 901px 293px #fff, 2035px 2364px #fff, 1751px 1040px #fff, 747px 856px #fff,
+    570px 1681px #fff, 610px 2378px #fff, 1149px 1377px #fff, 895px 909px #fff, 1663px 1965px #fff, 853px 86px #fff, 1545px 2181px #fff,
+    150px 1823px #fff, 1518px 1282px #fff, 2168px 1436px #fff, 2015px 1944px #fff, 2204px 2093px #fff, 1651px 1304px #fff, 874px 1574px #fff,
+    1988px 675px #fff, 1524px 2320px #fff, 1952px 878px #fff, 296px 1684px #fff, 2333px 1884px #fff, 1718px 1596px #fff, 2045px 92px #fff,
+    1382px 898px #fff, 661px 337px #fff, 35px 259px #fff, 771px 424px #fff, 1773px 163px #fff, 925px 1205px #fff, 958px 812px #fff,
+    2005px 2138px #fff, 843px 183px #fff, 253px 907px #fff, 1429px 807px #fff, 1341px 1281px #fff, 2153px 2021px #fff, 164px 1091px #fff,
+    460px 823px #fff, 1624px 2152px #fff, 986px 1915px #fff, 338px 24px #fff, 174px 1191px #fff, 999px 789px #fff, 120px 1169px #fff,
+    1975px 1378px #fff, 110px 1562px #fff, 1573px 1751px #fff, 1179px 1518px #fff, 1669px 51px #fff, 279px 1280px #fff, 1275px 607px #fff,
+    1004px 1136px #fff, 898px 54px #fff, 1306px 471px #fff, 1047px 2088px #fff, 1822px 1475px #fff, 1599px 1174px #fff, 621px 79px #fff,
+    446px 1619px #fff, 1436px 1224px #fff, 2068px 1601px #fff, 1964px 1240px #fff, 945px 449px #fff, 455px 1992px #fff, 67px 1334px #fff,
+    998px 2335px #fff, 371px 778px #fff, 476px 1953px #fff, 2272px 144px #fff, 1467px 2376px #fff, 851px 899px #fff, 788px 1743px #fff,
+    1592px 1194px #fff, 1670px 87px #fff, 1361px 141px #fff, 515px 854px #fff, 707px 392px #fff, 1498px 664px #fff, 567px 154px #fff,
+    878px 1731px #fff, 575px 2226px #fff, 179px 1397px #fff, 2197px 2166px #fff, 940px 2147px #fff, 2291px 788px #fff, 953px 765px #fff,
+    1013px 1205px #fff, 1885px 541px #fff, 466px 1826px #fff, 994px 1712px #fff, 2249px 1249px #fff, 904px 293px #fff, 1413px 92px #fff,
+    401px 453px #fff, 431px 428px #fff, 1870px 293px #fff, 1733px 663px #fff, 702px 56px #fff, 1627px 2247px #fff, 1409px 1051px #fff,
+    1255px 1117px #fff;
+}
+
+/* Big stars */
+.stars-big,
+.stars-big:after {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  /* Box-shadow to create multiple big stars in the background */
+  box-shadow: 1971px 805px #fff, 2197px 500px #fff, 1644px 425px #fff, 1542px 2261px #fff, 107px 1890px #fff, 2001px 1530px #fff,
+    1400px 666px #fff, 1028px 857px #fff, 981px 2031px #fff, 1065px 1425px #fff, 1004px 1732px #fff, 2320px 2201px #fff, 526px 324px #fff,
+    1115px 855px #fff, 224px 497px #fff, 1119px 185px #fff, 204px 130px #fff, 1187px 1416px #fff, 928px 579px #fff, 243px 985px #fff,
+    86px 1399px #fff, 1140px 291px #fff, 1155px 2129px #fff, 1256px 1329px #fff, 1926px 617px #fff, 799px 1318px #fff, 2032px 2302px #fff,
+    1082px 1572px #fff, 1596px 1610px #fff, 976px 1989px #fff, 1161px 1181px #fff, 1676px 1106px #fff, 2086px 736px #fff, 545px 427px #fff,
+    2309px 985px #fff, 1618px 1896px #fff, 1211px 1956px #fff, 2214px 625px #fff, 1269px 1078px #fff, 1912px 15px #fff, 2233px 1911px #fff,
+    666px 217px #fff, 1386px 1610px #fff, 86px 1476px #fff, 1566px 1707px #fff, 68px 2181px #fff, 1858px 786px #fff, 896px 1428px #fff,
+    1470px 2293px #fff, 958px 650px #fff, 344px 1152px #fff;
+}
+
+/* Animation for the stars to create the falling effect */
+.stars-small,
+.stars-big {
+  animation: animStar 200s linear infinite;
+}
+
+/* Keyframes for animating the stars moving upwards */
+@keyframes animStar {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2000px);
+  }
+}
+
+.stars-small:after,
+.stars-big:after {
+  content: '';
+  position: absolute;
+  top: 2000px;
+}
+
+/* breathing skeleton */
+@keyframes breathing {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.breathing-skeleton {
+  animation: breathing 2s infinite ease-in-out;
+  background-color: #41444d;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.circle-skeleton {
+  border-radius: 50%;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile-only ticker animation */
+@media (max-width: 768px) {
+  .mobile-ticker {
+    animation: ticker 30s linear infinite;
+    will-change: transform;
+  }
+
+  .mobile-ticker:hover {
+    animation-play-state: paused;
+  }
+}
