@@ -1,0 +1,56 @@
+const style = (open, isRTL) => {
+  return {
+    root: {
+      position: 'unset',
+      top: '0',
+      left: ' 0',
+      right: ' 0',
+      bottom: '0',
+      overflow: 'hidden',
+    },
+    sidebar: {
+      zIndex: '2',
+      width: '300px',
+      position: 'fixed',
+      top: '0',
+      bottom: '0',
+      transition: 'transform .3s ease-out',
+      WebkitTransition: '-webkit-transform .3s ease-out',
+      willChange: 'transform',
+      overflow: 'hidden',
+      marginTop: '74px',
+    },
+    content: {
+      position: 'unset',
+      marginLeft: !isRTL && open ? '300px' : '0px',
+      marginRight: isRTL && open ? '300px' : '0px',
+      marginTop: '74px',
+      top: ' 0',
+      left: '0',
+      right: '0',
+      bottom: '0',
+      overflowY: 'auto',
+      transition: 'left .3s ease-out, right .3s ease-out',
+      padding: '20px',
+    },
+    overlay: {
+      zIndex: '1',
+      position: 'fixed',
+      top: ' 0',
+      left: '0',
+      right: '0',
+      bottom: '0',
+      opacity: '0',
+      visibility: 'hidden',
+      transition: 'opacity .3s ease-out, visibility .3s ease-out',
+      backgroundColor: 'rgba(0,0,0,.3)',
+    },
+    dragHandle: {
+      zIndex: '1',
+      position: 'fixed',
+      top: '0',
+      bottom: '0',
+    },
+  };
+};
+export default style;

@@ -1,0 +1,982 @@
+{
+  "automod": {
+    "setup": "Setup",
+    "pageTitle": "Auto Mod",
+    "title": "Auto Mod",
+    "cancel": "cancel",
+    "save": "Save",
+    "Sec_1": {
+      "p_1": "BAD WORDS",
+      "p_2": "DISABLED CHANNELS",
+      "p_3": "DISABLED ROLES",
+      "p_4": "Actions",
+      "p_5": "Delete message",
+      "p_6": "Send To Logs",
+      "p_7": "CHANNEL:",
+      "p_8": "TIMEOUT MEMBER",
+      "p_9": "FOR:",
+      "p_10": "MAX MENTIONS"
+    },
+    "0": {
+      "name": "BAD WORDS",
+      "action": "Detect and handle messages containing specific bad words or phrases."
+    },
+    "1": {
+      "name": "SPAM DETECTION",
+      "action": "Identify and handle spam messages based on frequency and content."
+    },
+    "2": {
+      "name": "LINK FILTERING",
+      "action": "Filter and manage messages containing links, with options for allowed domains."
+    },
+    "3": {
+      "name": "MENTION SPAM",
+      "action": "Detect and handle messages that excessively mention other users."
+    },
+    "4": {
+      "name": "MASS CAPS DETECTION",
+      "action": "Identify and manage messages that contain an excessive amount of capital letters."
+    },
+    "5": {
+      "name": "DISCORD INVITES FILTERING",
+      "action": "Identify and manage messages that contain Discord server invite links."
+    },
+    "input": {
+      "option_1": "Seconds",
+      "option_2": "Minutes",
+      "option_3": "Hours",
+      "option_4": "Days"
+    }
+  },
+  "BotNotInServer": {
+    "pageTitle": "The bot is not present in the server",
+    "title": "This server requires additional setup",
+    "p": "It looks like the bot is not in your server yet. To get started, please invite the bot to your server by clicking the button below.",
+    "invite": "Invite Bot to Server"
+  },
+  "command": {
+    "pageTitle": "General Commands",
+    "title": "General Commands",
+    "user": "Displays information about a specific user, including their roles and join date",
+    "server": "Provides detailed information about the server, such as member count and creation date",
+    "roles": "Lists all the roles available on the server",
+    "ping": "Checks the bot's response time to the server",
+    "banner": "Displays the server's banner image, if set",
+    "avatar": "Shows the avatar of a specified user"
+  },
+  "commands": {
+    "pageTitle": "Mod Commands",
+    "title": "Mod Commands",
+    "ban": "Bans a user from the server, with optional reason",
+    "unban": "Unbans a user from the server",
+    "clear": "Clears a specified number of messages from a channel",
+    "hide": "Hides a channel from view",
+    "kick": "Kicks a user from the server",
+    "lock": "Locks a channel to prevent users from sending messages",
+    "move": "Moves a user to another voice channel",
+    "role": "Assigns or removes a role from a user",
+    "setnick": "Sets a user's nickname",
+    "show": "Shows a previously hidden channel",
+    "timeout": "Puts a user in timeout, preventing them from sending messages",
+    "unlock": "Unlocks a channel to allow users to send messages",
+    "untimeout": "Removes a user from timeout",
+    "unwarn": "Removes a warning from a user",
+    "vkick": "Kicks a user from a voice channel",
+    "vmute": "Mutes a user in a voice channel",
+    "warn": "Issues a warning to a user",
+    "warns": "Displays the warnings a user has received"
+  },
+  "common": {
+    "header": {
+      "firstbutton": "Try Premium",
+      "twicebutton": "Dashboard",
+      "support": "Support"
+    },
+    "userMenu": {
+      "dashboard": "Dashboard",
+      "logout": "Logout"
+    },
+    "setup": "Setup",
+    "noServer": "You are not an admin of any servers.",
+    "noServerp": " Please join or create a server and ensure you have administrative privileges.",
+    "title": "Choose server to setup",
+    "soon": {
+      "title": "Coming",
+      "titleSpan": "Soon",
+      "p": "This Feature Will Be Available With The Upcoming Updates. Stay Tuned."
+    }
+  },
+  "general": {
+    "pageTitle": "General Settings",
+    "generalSettings": "General Settings",
+    "botLanguage": "Bot Language",
+    "resetServerSettings": "Reset Server Settings",
+    "danger": "DANGER",
+    "embedColor": "Embed Color",
+    "embedColorDescription": "The selected color will be used for the embeds in the server.",
+    "autoRules": {
+      "title": "Auto Roles",
+      "input_1": "AUTO ROLE FOR MEMBERS",
+      "input_2": "AUTO ROLES FOR BOTS"
+    },
+    "games": "Games"
+  },
+  "home": {
+    "community": {
+      "joinBadge": "Join Our Discord",
+      "title": "Join Our Community",
+      "description": "Get help, discover new features, and meet other Wicks Bot users.",
+      "joinButton": "Join Our Discord"
+    },
+    "hero": {
+      "title": "Create a first-rate Discord community!",
+      "paragraph": "A highly adaptable bot featuring welcome images, detailed logs, social commands, moderation tools, and an array of other functionalities, all customizable to suit your server's needs",
+      "firstbutton": "Add To Discord",
+      "twicebutton": "Login",
+      "thirdbutton": "Dashboard"
+    },
+    "cards": {
+      "card_1": "Notification System",
+      "card_2": "Ticket System",
+      "card_3": "Welcoming System",
+      "card_4": "Protection System"
+    },
+    "future_1": {
+      "head": "Role Management",
+      "title": "Add Or Remove Roles From Members",
+      "paragraph": "This feature enables platform administrators to manage member roles by adding or removing them, facilitating efficient organization of permissions and functions within the platform."
+    },
+    "future_2": {
+      "head": "Server Welcoming",
+      "title": "Custom server welcoming!",
+      "paragraph": "The Custom Server Welcoming feature would provide a warm and personalized experience for new members joining the Server."
+    },
+    "future_3": {
+      "head": "Ticketing System",
+      "title": "Customizable Ticket Form Fields",
+      "paragraph": "Ability to assign the appropriate category for the ticket (technical support, billing, general inquiries, etc.)."
+    },
+    "future_4": {
+      "title": "Protection System",
+      "paragraph": "is one of the best in Discord"
+    },
+    "social": {
+      "head": "Social Media",
+      "item_1": "Instagram",
+      "item_2": "Youtube",
+      "item_3": "Twitter",
+      "item_4": "Telegram",
+      "item_5": "Discord"
+    },
+    "about": {
+      "head": "About Us",
+      "item_1": "Refund Policy",
+      "item_2": "Terms Of Service",
+      "item_3": "Privacy Policy",
+      "item_4": "Contact Us",
+      "item_5": "Bot Status"
+    },
+    "other": {
+      "head": "Other Links",
+      "item_1": "Top gg",
+      "item_2": "Discord Bot List",
+      "item_3": "Support Server"
+    },
+    "footer": {
+      "text_1": "Access all features from us and let us handle all your server needs!",
+      "text_2": "Access to more features with Premium Plan!",
+      "text_3": "Copyright © 2023 - 2025 Wicks Bot"
+    },
+    "stats": {
+      "title": "Wicks Bot",
+      "subtitle": "Is Trusted By Over [num] Servers",
+      "description1": "Unrivaled Speed, Unprecedented Trust, and an Unstoppable Community.",
+      "description2": "Wicks Bot streamlines server management with top-tier moderation, automation, and customization. Experience seamless operations and join our dynamic community of satisfied users today!",
+      "userCount": "7.8K+",
+      "serverCount": "3.9M+",
+      "memberCount": "7.8K+",
+      "userLabel": "Users",
+      "serverLabel": "Servers",
+      "memberLabel": "Wick Studio Members",
+      "badge": "Growing Community"
+    }
+  },
+  "logs": {
+    "pageTitle": "Logs Settings",
+    "title": "Logs Settings",
+    "channel": "CHANNEL",
+    "color": "COLOR",
+    "banMember": "MEMBER BAN",
+    "timeout": "TIMEOUT",
+    "createChannel": "CHANNEL CREATE",
+    "createThread": "THREAD CREATE",
+    "createRole": "ROLE CREATE",
+    "deleteChannel": "CHANNEL DELETE",
+    "deleteThread": "THREAD DELETE",
+    "deleteMessage": "MESSAGE DELETE",
+    "deleteMessages": "MESSAGES BULK DELETE",
+    "deleteRole": "ROLE DELETE",
+    "editMessages": "MESSAGE EDIT",
+    "kickMember": "MEMBER KICK",
+    "voiceMove": "VOICE MOVE",
+    "voiceDisconnect": "VOICE DISCONNECT",
+    "memberJoined": "MEMBER JOINED",
+    "memberLeft": "MEMBER LEFT",
+    "nicknameChanged": "NICKNAME CHANGED",
+    "probotMods": "PROBOT MODS",
+    "memberRoleGiven": "ROLE GIVEN",
+    "memberRoleRemoved": "ROLE REMOVED",
+    "serversInvites": "SERVERS INVITES",
+    "unbanMember": "MEMBER UNBAN",
+    "updateChannel": "CHANNEL UPDATE",
+    "updateThread": "THREAD UPDATE",
+    "updateChannelPermissions": "CHANNEL PERMISSIONS UPDATE",
+    "updateRole": "ROLE UPDATE",
+    "updateServer": "SERVER UPDATE",
+    "voiceJoined": "VOICE JOINED",
+    "voiceLeft": "VOICE LEFT",
+    "voiceState": "VOICE STATE",
+    "voiceSwitched": "VOICE SWITCHED",
+    "updateEmojis": "EMOJIS UPDATE",
+    "updateStickers": "STICKERS UPDATE",
+    "channels": "Enter channels...",
+    "roles": "Enter roles..."
+  },
+  "modal": {
+    "First": "ALIASES",
+    "twice": "ENABLED CHANNELS",
+    "third": "DISABLED CHANNELS",
+    "fourth": "ENABLED ROLES",
+    "fifth": "DISABLED ROLES",
+    "sixth": "Auto delete command reply after 5 seconds",
+    "seventh": "Delete the aliase message if user used aliase",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+
+  "policy": {
+    "lastUpdated": "Last Updated: January 2025",
+    "title": "Privacy Policy",
+    "subtitle": "Your privacy matters to us. Learn how we handle, protect, and respect your data while using Wicks Bot.",
+    "sections": [
+      {
+        "icon": "solar:shield-minimalistic-bold-duotone",
+        "title": "Our Commitment",
+        "content": "At Wicks Bot, we prioritize the protection of your privacy and personal information. This policy outlines our practices for collecting, using, and safeguarding your data while using our Discord bot and associated services."
+      },
+      {
+        "icon": "solar:database-bold-duotone",
+        "title": "Information We Collect",
+        "content": "We collect and process the following data to provide our services:",
+        "list": [
+          "Discord profile information (user ID, username, server roles)",
+          "Server configuration preferences",
+          "Bot interaction data and command usage"
+        ]
+      },
+      {
+        "icon": "solar:graph-new-bold-duotone",
+        "title": "How We Use Your Data",
+        "content": "Your data helps us deliver and enhance our services:",
+        "list": [
+          "Providing core bot functionality and features",
+          "Maintaining your preferences and settings",
+          "Ensuring platform security and preventing abuse",
+          "Communicating important updates and changes"
+        ]
+      },
+      {
+        "icon": "solar:lock-password-bold-duotone",
+        "title": "Data Security",
+        "content": "We implement industry-standard security measures to protect your information:",
+        "list": [
+          "End-to-end encryption for data transmission",
+          "Regular security audits and updates",
+          "Strict access controls and authentication",
+          "Compliance with Discord's security standards"
+        ],
+        "footer": "While we implement robust security measures, no online service can guarantee 100% security."
+      },
+      {
+        "icon": "solar:server-bold-duotone",
+        "title": "Data Storage",
+        "content": "Your data is securely stored on servers located in the European Union. We retain data only as long as necessary for service provision and legal compliance. You may request data deletion at any time through our support channels."
+      },
+      {
+        "icon": "solar:user-id-bold-duotone",
+        "title": "Your Rights",
+        "content": "You have several rights regarding your personal data:",
+        "list": ["Access your stored data", "Request corrections to inaccurate information", "Request deletion of your data"],
+        "footer": "Contact our support team to exercise these rights."
+      },
+      {
+        "icon": "solar:link-circle-bold-duotone",
+        "title": "Third-Party Services",
+        "content": "We utilize select third-party services to enhance our bot's functionality:",
+        "list": ["Discord API for core features", "Cloud hosting providers for data storage"],
+        "footer": "Each third-party service maintains its own privacy policy and data handling practices."
+      },
+      {
+        "icon": "solar:document-text-bold-duotone",
+        "title": "Policy Updates",
+        "content": "We may update this privacy policy periodically to reflect changes in our practices or legal requirements. We'll notify users of significant changes through our Discord server or email notifications."
+      },
+      {
+        "icon": "solar:chat-round-dots-bold-duotone",
+        "title": "Contact Us",
+        "content": "For questions or concerns about your privacy and data protection, reach out to us at:",
+        "list": ["Email: support@wick-studio.com", "Discord: Join our support server"]
+      }
+    ]
+  },
+  "protection": {
+    "pageTitle": "Protection Settings",
+    "title": "Protection Settings",
+    "rolesSec_1": {
+      "title": "ENABLED ROLES",
+      "noRole": "No Role Added",
+      "noRolep": "No roles have been added to the protection. Please add a role to get started with setting up the rate limits and actions."
+    },
+    "rolesSec_2": {
+      "title": "RESTRICT PROTECTION SETTINGS TO SERVER OWNER",
+      "p_1": "Note: When enabled, only the server owner can edit the protection settings.",
+      "p_2": "Administrators and other users won't have access."
+    },
+    "rolesSec_3": {
+      "title": "DASHBOARD ACCESS PERMISSION",
+      "p_1": "This setting determines the minimum permission level required for a user",
+      "p_2": "to access and modify the server's dashboard settings.",
+      "p_3": "We highly recommend setting this to Administrator.",
+      "btn_1": "Administrator",
+      "btn_2": "Manage Server"
+    },
+    "rolesSec_4": {
+      "title": "TRUSTED BOTS",
+      "input": "Type something and press enter...",
+      "p_1": "Add trusted bot IDs to this list. Only the bots added here will be allowed to join the server.",
+      "p_2": "All other bots that attempt to join will be automatically kicked."
+    },
+    "placeholder": "Type something and press enter...",
+    "ban": "Ban",
+    "kick": "Kick",
+    "role": "Role Update",
+    "channel": "Channel Update",
+    "limit": "Limit",
+    "rateLimit": "Rate limit action",
+    "options": {
+      "roles": "REMOVE MEMBER ROLES",
+      "kick": "KICK MEMBER",
+      "ban": "BAN MEMBER",
+      "notify": "NOTIFY OWNER"
+    }
+  },
+  "embed": {
+    "main": {
+      "pageTitle": "Embed Builder",
+      "title": "Embed Builder",
+      "toast": "Embed saved successfully!",
+      "add": "Add New"
+    },
+    "body": {
+      "sec_1": {
+        "toast": "Embed sent successfully!",
+        "embedNum": "Embed",
+        "messageContent": "Message Content",
+        "channel": "Channel",
+        "sendEmbed": "Send Embed",
+        "cancel": "Cancel",
+        "save": "Save",
+        "delete": "Delete"
+      },
+      "sec_2": {
+        "app": "APP",
+        "addField": "Add Field",
+        "clearField": "Clear Fields",
+        "inline": "Inline",
+        "image": "Image",
+        "remove": "Remove",
+        "authorName": "Author Name",
+        "title": "Title",
+        "description": "Description",
+        "fieldName": "Field Name",
+        "fieldValue": "Field Value",
+        "footer": "Footer Text"
+      },
+      "sec_3": {
+        "embedTitle": "Embed title",
+        "authorName": "Author Name",
+        "footer": "Footer Text"
+      }
+    }
+  },
+  "savebar": {
+    "alart": "Careful - you have unsaved changes!",
+    "btn_1": "Reset",
+    "btn_2": "Save"
+  },
+  "sidebar": {
+    "serverName": "SERVER",
+    "premium": "Premium",
+    "modSettings": {
+      "title": "MOD SETTINGS",
+      "comamand_1": "General settings",
+      "comamand_2": "Mod Commands",
+      "comamand_3": "Auto Mod",
+      "comamand_4": "Protection",
+      "comamand_5": "Logs"
+    },
+    "generalSettings": {
+      "colors": "Colors",
+      "title": "GENERAL SETTINGS",
+      "comamand_1": "Tickets",
+      "comamand_2": "Welcome",
+      "comamand_3": "Commands",
+      "comamand_4": "Auto Reply",
+      "comamand_5": "Embed Builder",
+      "apply": "Apply System",
+      "level": "Leveling System",
+      "notifications": "Notifications",
+      "games": "Games",
+      "rules": "Rules"
+    }
+  },
+  "terms": {
+    "pageTitle": "Terms of Service - Wicks Bot",
+    "metaDescription": "Review our terms of service to understand your rights and responsibilities when using Wicks Bot",
+    "lastUpdated": "Last Updated: January 2025",
+    "title": "Terms of Service",
+    "subtitle": "Please read these terms carefully before using Wicks Bot. By using our services, you agree to be bound by these terms.",
+    "sections": [
+      {
+        "icon": "solar:document-text-bold-duotone",
+        "title": "Acceptance of Terms",
+        "content": "By accessing or using Wicks Bot, you agree to be bound by these Terms of Service. If you do not accept these terms, please do not use our services.",
+        "list": [
+          "You must be at least 13 years old to use our services",
+          "You are responsible for maintaining the security of your account",
+          "You agree to provide accurate and complete information when creating an account"
+        ]
+      },
+      {
+        "icon": "solar:card-bold-duotone",
+        "title": "Premium Services",
+        "content": "Our premium features require payment and additional terms:",
+        "list": [
+          "All payments are processed securely through authorized payment providers",
+          "Premium features are subject to availability and may change",
+          "Refunds are handled according to our refund policy",
+          "Subscription terms may be modified with notice"
+        ]
+      },
+      {
+        "icon": "solar:shield-minimalistic-bold-duotone",
+        "title": "User Conduct",
+        "content": "Users must follow these guidelines when using our services:",
+        "list": [
+          "No harassment, hate speech, or discriminatory behavior",
+          "No spamming or automated abuse of our services",
+          "No unauthorized access or interference with our systems",
+          "Respect Discord's Terms of Service and Community Guidelines"
+        ]
+      },
+      {
+        "icon": "solar:server-bold-duotone",
+        "title": "Service Availability",
+        "content": "While we strive for reliable service, we cannot guarantee uninterrupted access:",
+        "list": [
+          "Services may be temporarily unavailable for maintenance",
+          "We are not liable for any service interruptions",
+          "We reserve the right to modify or discontinue features"
+        ],
+        "footer": "We will make reasonable efforts to notify users of significant changes or interruptions."
+      },
+      {
+        "icon": "solar:copyright-bold-duotone",
+        "title": "Intellectual Property",
+        "content": "All content and materials provided through our services are protected by intellectual property rights:",
+        "list": [
+          "Our branding, logos, and designs are our exclusive property",
+          "Users may not copy or modify our content without permission",
+          "User-generated content remains the property of the creator"
+        ]
+      },
+      {
+        "icon": "rivet-icons:ban",
+        "title": "Account Termination",
+        "content": "We reserve the right to terminate or suspend accounts:",
+        "list": [
+          "Violations of these terms may result in immediate termination",
+          "Users will be notified of termination when possible",
+          "Premium subscribers may receive partial refunds for unused service"
+        ]
+      },
+      {
+        "icon": "solar:document-bold-duotone",
+        "title": "Changes to Terms",
+        "content": "We may update these terms periodically:",
+        "list": [
+          "Users will be notified of significant changes",
+          "Continued use after changes constitutes acceptance",
+          "Previous versions will be archived and available upon request"
+        ]
+      },
+      {
+        "icon": "solar:chat-round-dots-bold-duotone",
+        "title": "Contact Information",
+        "content": "For questions or concerns about these terms, please contact us:",
+        "list": ["Email: support@wick-studio.com", "Discord: Join our support server"]
+      }
+    ]
+  },
+  "tickets": {
+    "pageTitle": "Ticket Settings",
+    "title": "Ticket Settings",
+    "remove": "Remove",
+    "Sec_1": {
+      "title": "TICKET SETUP COVER IMAGE",
+      "p_1": "This image will be displayed on SETUP MESSAGE.",
+      "p_2": "The recommended minimum size is 1920x1080 and",
+      "p_3": "the recommended aspect ratio is 16:9.",
+      "btn_1": "Upload Background"
+    },
+    "Sec_2": {
+      "title": "TICKET SETUP LINE IMAGE",
+      "btn_1": "Upload Image"
+    },
+    "Sec_3": {
+      "title": "EMBED DESCRIPTION",
+      "switch_title": "TICKET WORKING HOURS",
+      "until": "UNTIL:",
+      "from": "FROM:"
+    },
+    "Sec_4": {
+      "title": "TICKET CATEGORIES",
+      "p_1": "Members will be asked these questions before they join your server. Use them to assign channels and",
+      "p_2": "important roles. Pre-join Questions will also be available on the Channels & Roles page."
+    },
+    "category": {
+      "background": "BACKGROUND",
+      "Tooltip": "Delete this Category",
+      "choose": "Choose",
+      "remove": "Remove",
+      "categoryName": "CATEGORY NAME",
+      "categoryChannel": "CATEGORY CHANNEL",
+      "logChannel": "LOG CHANNEL",
+      "adminRole": "ADMIN ROLE",
+      "displayType": "DISPLAY TYPE",
+      "emoji": "EMOJI",
+      "embed": "EMBED"
+    },
+    "add": "Add a Category",
+    "permissions": {
+      "title": "Permissions",
+      "description": "Configure who can perform actions on tickets",
+      "adminTitle": "Admin Permissions",
+      "userTitle": "User Permissions",
+      "infoTitle": "Permission Information",
+      "infoDescription": "Admin permissions apply to server moderators and administrators. User permissions apply to ticket creators and members.",
+      "permissions": {
+        "add": {
+          "title": "Add Users",
+          "description": "Add users to tickets"
+        },
+        "claim": {
+          "title": "Claim",
+          "description": "Claim tickets by admin"
+        },
+        "close": {
+          "title": "Close",
+          "description": "Close tickets when done"
+        },
+        "copy": {
+          "title": "Copy",
+          "description": "Save copy of ticket"
+        },
+        "delete": {
+          "title": "Delete",
+          "description": "Delete the ticket after it is done"
+        },
+        "reminder": {
+          "title": "Reminder",
+          "description": "Reminder users to reply to tickets"
+        }
+      }
+    },
+    "messageSetup": {
+      "title": "Message Setup",
+      "description": "Configure and send ticket setup messages to your server channels",
+      "channelTitle": "Select channel for setup message",
+      "selectChannel": "Select a channel",
+      "customImagesTitle": "Custom Images (Optional)",
+      "customBackgroundLabel": "Background Image",
+      "customLineLabel": "Line Image",
+      "dragDropImage": "Drag & drop or click to select",
+      "invalidFileType": "Please select a valid image file",
+      "fileTooLarge": "File size must be less than 5MB",
+      "categoriesTitle": "Select categories to include",
+      "noCategories": "Add categories first to continue.",
+      "readyToSend": "Ready to send",
+      "setupRequired": "Setup required",
+      "send": "Send Setup Message",
+      "sending": "Sending...",
+      "saveChangesWarning": "Please save your changes before sending the setup message."
+    }
+  },
+  "welcome": {
+    "pageTitle": "Welcome Settings",
+    "title": "Welcome Settings",
+    "remove": "Remove",
+    "sec_1": {
+      "title": "SEND WELCOMING MESSAGE",
+      "textArea": "MESSAGE:",
+      "send": "SEND TO:",
+      "option_1": "Member DM",
+      "option_2": "Specific Channel"
+    },
+    "variables": {
+      "title": "VARIABLES",
+      "item_1": "Server Name",
+      "item_2": "Total Members",
+      "item_3": "User Mention (@Username)",
+      "item_4": "Username",
+      "item_5": "Inviter Mention (@Username)",
+      "item_6": "Inviter Username",
+      "item_7": "Invite Usage Count"
+    },
+    "sec_2": {
+      "title": "SEND WELCOMING IMAGE",
+      "choose": "Choose Background"
+    },
+    "list": {
+      "option_1": "Background",
+      "option_2": "Avatar",
+      "option_3": "Username",
+      "option_4": "Text"
+    },
+    "sec_3": {
+      "text_1": "WIDTH",
+      "text_2": "POSITION (TOP)",
+      "text_3": "SHAPE",
+      "text_4": "HEIGHT",
+      "text_5": "POSITION (LEFT)",
+      "option_1": "SQUARE",
+      "option_2": "CIRCLE"
+    },
+    "sec_4": {
+      "text_1": "WIDTH",
+      "text_2": "POSITION (TOP)",
+      "text_3": "COLOR",
+      "text_4": "FONT SIZE",
+      "text_5": "POSITION (LEFT)"
+    },
+    "sec_5": {
+      "checkbox": "Enable Welcome Text",
+      "inputTitle": "TEXT CONTENT",
+      "text_1": "WIDTH",
+      "text_2": "POSITION (TOP)",
+      "text_3": "COLOR",
+      "text_4": "FONT SIZE",
+      "text_5": "POSITION (LEFT)"
+    }
+  },
+  "autoreply": {
+    "enabled_channels": "enabled channels",
+    "attachment": "Attachment",
+    "chooseFile": "Choose File",
+    "title": "Auto Reply",
+    "newTrigger": "New Trigger",
+    "editTrigger": "Edit Trigger",
+    "trigger": "Trigger",
+    "reply": "Reply",
+    "useEmbed": "Use Embed ?",
+    "useAttachment": "Use Attachment ?",
+    "mentionUser": "Mention User",
+    "removeFile": "Remove File",
+    "addNew": "Add New",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "selectServer": {
+    "title": "Select Server To Setup"
+  },
+  "premium": {
+    "limitedOffer": "Limited Time Offer - Get 20% off Premium",
+    "exclusive": "Premium Exclusive",
+    "adTitle": "Unlock the Full Potential of Your Server",
+    "description": "Take your Discord server to the next level with premium features, priority support, and exclusive tools.",
+    "feature1Title": "Custom bot Personalization",
+    "feature1Desc": "Customize your bot's name, status, activity and appearance to match your server's identity",
+    "feature2Title": "Priority Features",
+    "feature2Desc": "Get early access to new features and updates",
+    "feature3Title": "Advanced Analytics",
+    "feature3Desc": "Detailed insights and statistics for your server",
+    "feature4Title": "24/7 Support",
+    "feature4Desc": "Direct access to our premium support team",
+    "getStarted": "Get Premium Access",
+    "moneyBack": "30-day money-back guarantee",
+    "title": "Premium",
+    "botPersonalization": "Bot Personalization",
+    "updateBanner": "Update Banner",
+    "invite": "Invite",
+    "botSubscription": "Bot Subscription",
+    "botName": "Bot Name",
+    "botStatus": "Bot Status",
+    "activityType": "Activity Type",
+    "activityText": "Activity Text",
+    "streamUrl": "Stream URL",
+    "renew": "Renew",
+    "yourPlan": "You are currently on the",
+    "subscriptionEnding": "Subscription ending:",
+    "monthlyPlan": "Monthly Plan",
+    "yearlyPlan": "Yearly Plan",
+    "subscribe": "Subscribe",
+    "accessMoreFeatures": "Access more features with premium plans",
+    "paymentMethod": "Select Payment Method:",
+    "creditCard": "Credit Card (Visa, MasterCard)",
+    "cryptoCurrency": "Crypto Currency",
+    "completePayment": "Complete Payment",
+    "discountCode": "Discount Code",
+    "apply": "Apply",
+    "total": "Total",
+    "pay": "Pay",
+    "unbanAll": "Unban all",
+    "priorityFeatureRequests": "Priority in feature requests",
+    "from": "from",
+    "perMonth": "per month",
+    "saveWithYearlyPlan": "Save 20% with the yearly plan!",
+    "subscribeMonthly": "Subscribe to Monthly Plan",
+    "subscribeYearly": "Subscribe to Yearly Plan",
+    "perYear": "per year",
+    "saveComparedMonthly": "Save 20% compared to the monthly plan!",
+    "manage": "Manage Billing",
+    "ownerError": "You are not the subscription owner and cannot manage the billing.",
+    "customBot": "Custom Bot",
+    "cancelAnytime": "Cancel anytime",
+    "customerSupport": "24/7 customer support",
+    "choosePlan": "Choose Plan",
+    "ownerOnly": "Only the bot owner can manage the subscription",
+    "bestValue": "Best Value",
+    "threeMonthPlan": "3 Month Plan",
+    "perThreeMonths": "per 3 months",
+    "sixMonthPlan": "6 Month Plan",
+    "perSixMonths": "per 6 months",
+    "voucherCodeError": "Please enter a voucher code",
+    "paymentSuccess": "Payment successful! Activating your premium...",
+    "premiumActivated": "Premium activated successfully!",
+    "paymentError": "Error processing payment. Please try again.",
+    "invalidVoucher": "Invalid voucher code",
+    "voucherProcessingError": "Error processing voucher",
+    "closeModal": "Close Modal",
+    "premiumAccessTitle": "Premium Access",
+    "premiumAccessDescription": "To purchase premium access to Wicks Bot, please open a premium ticket in our Discord server.",
+    "openTicket": "Open Premium Ticket",
+    "voucherTitle": "Have a Voucher Code?",
+    "voucherPlaceholder": "Enter voucher code",
+    "redeem": "Redeem",
+    "AddVoucher": "Add Voucher"
+  },
+  "apply": {
+    "title": "Apply System",
+    "descriptionTitle": "APPLY Description",
+    "questionsTitle": "APPLY Questions",
+    "questionsSubtitle": "Members will be asked these questions before submitting the apply form. (Max 5)",
+    "questionLabel": "Question",
+    "deleteQuestionTooltip": "Delete this question",
+    "noQuestionText": "No question text provided",
+    "paragraphLabel": "Paragraph",
+    "requiredLabel": "Required",
+    "addQuestionButton": "Add a Question",
+    "onAcceptTitle": "ON ACCEPT MEMBER",
+    "sendDMLabel": "SEND DM",
+    "addRoleLabel": "ADD ROLE",
+    "onRejectTitle": "ON REJECT MEMBER",
+    "logsTitle": "APPLY LOGS",
+    "logChannelLabel": "APPLY LOG CHANNEL",
+    "cooldownTitle": "APPLY COOLDOWN",
+    "cooldownMinLabel": "5m",
+    "cooldownMaxLabel": "1d",
+    "cooldownDescription": "Set a cooldown period for members to reapply. Avoid multiple applications by enforcing a cooldown between submissions.",
+    "hoursLabel": "h",
+    "minutesLabel": "m"
+  },
+  "colors": {
+    "pageTitle": "Colors",
+    "pickerTitle": "Colors Picker",
+    "selectPalette": "Select a Color Palette for Your Server.",
+    "shapeTitle": "Colors Shape",
+    "pickerTextTitle": "Picker Text Title",
+    "commandsTitle": "Colors Commands",
+    "colorDescription": "Choose color",
+    "colorsDescription": "Choose colors",
+    "creatingColorRoles": "Creating Color Roles...",
+    "roleCreationStarted": "Role creation started, you will be notified upon completion.",
+    "rateLimitExceeded": "Rate limit exceeded. Please try again later.",
+    "imageUploadFailed": "Image upload failed",
+    "remove": "Remove",
+    "confirmTitle": "Create 56 Color Roles",
+    "confirmMessage": "Are you sure you want to create 56 color roles?",
+    "warningMessage": "Note: You won't be able to create another set of roles for 12 hours.",
+    "cancelButton": "Cancel",
+    "confirmButton": "Confirm",
+    "failedToSaveCommand": "Failed to save command",
+    "failedToSaveColors": "Failed to save colors",
+    "defaultPickerTitle": "Color Picker"
+  },
+  "leveling": {
+    "pageTitle": "Leveling",
+    "title": "Leveling System",
+    "xpSettings": {
+      "title": "XP Settings",
+      "disabledChannels": "Disabled XP Channels",
+      "disabledRoles": "Disabled XP Roles"
+    },
+    "levelUpNotifications": {
+      "title": "Level Up Notifications",
+      "announcementChannel": "Announcement Channel",
+      "levelUpMessage": "Level Up Message",
+      "messagePlaceholder": "Enter level up message...",
+      "variables": {
+        "user": "user",
+        "level": "level"
+      }
+    },
+    "rewards": {
+      "title": "Level Rewards",
+      "rewardNumber": "Reward",
+      "xpLevel": "XP Level",
+      "voiceLevel": "Voice Level",
+      "rewardRole": "Reward Role",
+      "rewardRoleRequired": "Required",
+      "dmMember": "Send DM on reward",
+      "removeHigherRoles": "Remove higher roles",
+      "addNew": "Add New Reward",
+      "validationErrors": {
+        "title": "Please fix the following errors:",
+        "roleRequired": "Reward {number} requires a role to be selected"
+      }
+    },
+    "commands": {
+      "title": "Commands",
+      "top": {
+        "name": "top",
+        "description": "View the server's leaderboard"
+      },
+      "rank": {
+        "name": "rank",
+        "description": "View your or another member's rank"
+      },
+      "reset": {
+        "name": "reset",
+        "description": "Reset a member's XP"
+      },
+      "setxp": {
+        "name": "setxp",
+        "description": "Set a member's XP"
+      }
+    }
+  },
+  "refund": {
+    "lastUpdated": "Last Updated: March 2024",
+    "title": "Refund Policy",
+    "subtitle": "Clear guidelines on our refund procedures and eligibility criteria",
+    "sections": [
+      {
+        "icon": "mdi:check-circle-outline",
+        "title": "Eligible Refund Scenarios",
+        "content": "We understand that issues can arise, and we're committed to fair refund practices. The following situations may qualify for a full or prorated refund:",
+        "list": [
+          "Unauthorized transactions verified by payment provider",
+          "Technical issues preventing access to main premium features for over 24 hours",
+          "Service outages lasting more than 24 consecutive hours",
+          "Duplicate charges or billing errors",
+          "Premium features significantly different from advertised"
+        ],
+        "footer": "All refund requests must be accompanied by appropriate documentation or evidence."
+      },
+      {
+        "icon": "mdi:close-circle-outline",
+        "title": "Non-Refundable Situations",
+        "content": "To maintain fair service delivery, refunds will not be processed in the following cases:",
+        "list": [
+          "Refunds for subscription renewals are generally not provided. However, if a cancellation request is made within '48 hours of renewal', we may offer a refund at our discretion.",
+          "Change of mind after feature usage",
+          "Requests without valid service-related reasoning or documentation",
+          "Violation of our Terms of Service"
+        ]
+      },
+      {
+        "icon": "mdi:information-outline",
+        "title": "Refund Process",
+        "content": "To request a refund, please follow these steps:",
+        "list": [
+          "Contact our support team through Discord or email",
+          "Include your transaction ID and account information",
+          "Explain your refund reason clearly",
+          "Provide relevant details or screenshots if available",
+          "Allow 5-7 business days for review and processing"
+        ]
+      },
+      {
+        "icon": "mdi:alert-circle-outline",
+        "title": "Important Notes",
+        "content": "Please be aware of the following when requesting refunds:",
+        "list": [
+          "We review each request individually on its merits",
+          "Approved refunds are processed within 5-7 business days",
+          "Partial refunds may be offered for partial service issues",
+          "If a refund is not possible, we may offer account credits or other resolutions",
+          "Multiple refund requests may require additional review"
+        ],
+        "footer": "Questions about refunds? Contact our support team at support@wicksbot.com - we're here to help!"
+      }
+    ]
+  },
+  "rules": {
+    "title": "Server Rules",
+    "settingsTitle": "Rules Settings",
+    "enableRules": "Enable Rules System",
+    "channelLabel": "Rules Channel",
+    "errorRequiredChannel": "Please select a channel",
+    "sending": "Sending...",
+    "sendRules": "Send Rules",
+    "sendRulesDescription": "Send or update the rules message in the selected channel",
+    "contentTitle": "Content Settings",
+    "useEmbed": "Use Embed for Rules",
+    "embedSelect": "Select Embed",
+    "selectEmbedPlaceholder": "Select an embed template...",
+    "noEmbedsAvailable": "No embeds available. Create one in the Embed Builder.",
+    "errorRequiredEmbed": "Please select an embed",
+    "untitledEmbed": "Untitled Embed",
+    "noDescription": "No description",
+    "descriptionLabel": "Description",
+    "descriptionDisabledWithEmbed": "Disabled when using embed",
+    "descriptionDisabledPlaceholder": "Description is disabled when using embed",
+    "descriptionPlaceholder": "Enter a description for your rules...",
+    "errorRequiredDescription": "Please enter a description",
+    "embedDescriptionNote": "When using an embed, the description from the selected embed template will be used instead",
+    "rulesListTitle": "Rules List",
+    "rulesListSubtitle": "Add up to 25 rules for your server",
+    "ruleLabel": "RULE",
+    "deleteRuleTooltip": "Delete rule",
+    "ruleTitle": "TITLE",
+    "ruleTitlePlaceholder": "Enter rule title...",
+    "noRuleTitleText": "No title",
+    "emoji": "EMOJI",
+    "noEmoji": "No emoji",
+    "selectEmoji": "Select Emoji",
+    "searchEmoji": "Search emoji...",
+    "clearEmoji": "Clear emoji",
+    "description": "DESCRIPTION",
+    "ruleDescriptionPlaceholder": "Enter rule description...",
+    "addRuleButton": "Add Rule",
+    "customCategory": "Custom",
+    "smileysCategory": "Smileys & People",
+    "animalsCategory": "Animals & Nature",
+    "foodCategory": "Food & Drink",
+    "activitiesCategory": "Activities",
+    "travelCategory": "Travel & Places",
+    "objectsCategory": "Objects",
+    "symbolsCategory": "Symbols",
+    "flagsCategory": "Flags"
+  }
+}
